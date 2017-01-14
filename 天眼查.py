@@ -8,8 +8,8 @@ import time
 '''
     this website is built by dynamic webapge technology, each request to this site with a unique token.
     i take just two steps to solve the problem below:
-    1,use webdriver simulate human behavior by open chrome to download all webapge data
-    2,use re to find strings that you need. 
+    1,use webdriver module simulate human behavior by open chrome to download all webapge data
+    2,use re module to find strings that you need. 
 '''
 
 

@@ -73,7 +73,7 @@ def main():
     #获取所有链接
     url_list=get_all_pages_urls()
     #对每个链接进行内容的提取
-    k=1
+    k=1 #k作为计数器，共有多少个页面被解析。
     for url in url_list:
         parse_page(url)
         print(k)

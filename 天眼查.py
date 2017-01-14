@@ -1,9 +1,16 @@
 #功能：输入关键字，可以将所有含关键字的公司搜索出来
 
-import requests
+
 from selenium import webdriver
 import re
 import time
+
+'''
+    this website is built by dynamic webapge technology, each request to this site with a unique token.
+    i take just two steps to solve the problem below:
+    1,use webdriver simulate human behavior by open chrome to download all webapge data
+    2,use re to find strings that you need. 
+'''
 
 
 global COMPANY_NAME

@@ -22,7 +22,7 @@ def parse_page(link):#解析每个公司页面中的公司相关信息
     page=webdriver.Chrome()
     try:
         page.get(link)
-        time.sleep(2)
+        time.sleep(1)
         #print(page.page_source)
         hangye=re.findall(r'行业：<span class="ng-binding">(.*)</span></div></td><td class="basic-td" width="60%"><div class="c8">工商注册号',page.page_source)[0]
         gszch=re.findall(r'工商注册号：<span class="ng-binding">(.*)</span></div></td></tr><tr><td class="basic-td"><div class="c8">企业类型',page.page_source)[0]
@@ -33,7 +33,7 @@ def parse_page(link):#解析每个公司页面中的公司相关信息
         print('****************************')
     except Exception:
         page.get(link)
-        time.sleep(2)
+        time.sleep(1)
         #print(page.page_source)
         hangye=re.findall(r'行业：<span class="ng-binding">(.*)</span></div></td><td class="basic-td" width="60%"><div class="c8">工商注册号',page.page_source)[0]
         gszch=re.findall(r'工商注册号：<span class="ng-binding">(.*)</span></div></td></tr><tr><td class="basic-td"><div class="c8">企业类型',page.page_source)[0]
